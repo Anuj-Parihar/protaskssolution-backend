@@ -7,9 +7,10 @@ const cors = require("cors");
 const app = express();
 
 // Middleware
-app.use(cors({
-  origin: ['https://www.protaskssolution.com','https://protaskssolution.com']
-}));
+// app.use(cors({
+//   origin: ['https://www.protaskssolution.com','https://protaskssolution.com']
+// }));
+app.use(cors());
 // app.use(bodyParser.json());
 app.use(express.json());
 // MongoDB Connection
